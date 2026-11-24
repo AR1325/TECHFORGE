@@ -1,0 +1,11 @@
+<resources>
+    <style name="TechForgeTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#67E2CD</item>
+        <item name="android:statusBarColor">#090E15</item>
+        <item name="android:navigationBarColor">#090E15</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>
