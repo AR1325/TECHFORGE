@@ -81,7 +81,7 @@ fun ProjectsScreen(projects: List<ProjectEntity>, repository: TechForgeRepositor
         text = { Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             OutlinedTextField(name, { name = it }, label = { Text("Nombre") })
             OutlinedTextField(category, { category = it }, label = { Text("Categoría") })
-            OutlinedTextField(description, { description = it }, label = { Text("Descripción"), })
+            OutlinedTextField(description, { description = it }, label = { Text("Descripción") })
         } },
         confirmButton = { Button(onClick = { scope.launch { repository.addProject(name, description, category) }; name = ""; description = ""; showDialog = false }, enabled = name.isNotBlank()) { Text("Guardar") } },
         dismissButton = { TextButton(onClick = { showDialog = false }) { Text("Cancelar") } }
